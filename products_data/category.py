@@ -9,7 +9,7 @@ def get_categories() -> Dict[str,str]:
     key: category name
     value: url
     '''
-    with io.open('./CatalogSearch/catalog.json', 'r', encoding='utf-8') as json_file:
+    with io.open('./catalog_search/catalog.json', 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
         urls_list = []
         names_list = []
@@ -51,7 +51,7 @@ def get_categories() -> Dict[str,str]:
 #     key: category name
 #     value: url
 #     '''
-#     with io.open('../CatalogSearch/catalog.json', 'r', encoding='utf-8') as json_file:
+#     with io.open('../catalog_search/catalog.json', 'r', encoding='utf-8') as json_file:
 #         data = json.load(json_file)
 #         result_categories_dict = {}
 #

@@ -2,8 +2,8 @@ import re
 from aiohttp import ClientResponseError
 from scrapy import Selector
 
-from ProductsData.models import Product
-from ProductsData.product_discription import get_product_description
+from products_data.models import Product
+from products_data.product_discription import get_product_description
 
 
 class CategorySpider():

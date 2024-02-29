@@ -1,5 +1,5 @@
 import json
-from CatalogSearch.catalog import get_catalog
+from catalog_search.catalog import get_catalog
 
 
 def write_json_categories(file, data):
