@@ -50,20 +50,3 @@ class CategorySpider():
             )
 
             await item.save()
-
-
-
-
-
-            # item_test = {
-            #     'name':f'{product_brand} {product_name}',
-            #     'price':product_price,
-            #     'currency':price_currency,
-            #     'url':f'{self.main_url}{product_href}',
-            #     'img_link':product_img,
-            #     'description':product_description,
-            #     'rating':product_rating,
-            #     'reviews':product_reviews,
-            # }
-            # print(item_test)
-

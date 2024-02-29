@@ -24,10 +24,3 @@ async def start_request():
 
 if __name__ == '__main__':
     asyncio.run(start_request())
-
-# for products_data in await CategorySpider().start_spider(html_page):
-#     # products_data = await CategorySpider().start_spider(html_page)
-#     await db.add_document(collection_name, products_data)
-# for products_data in await CategorySpider().start_spider(html_page):
-#
-#     # await db.add_document(collection_name, products_data)

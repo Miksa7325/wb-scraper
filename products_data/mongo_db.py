@@ -26,9 +26,3 @@ class MongoDB(object):
         uri = "mongodb://localhost:27017"
         client = AsyncIOMotorClient(uri, server_api=ServerApi('1'))
         return client
-
-    # async def add_document(self, collection_name, document: Dict):
-    #     collection = self._db[collection_name]
-    #     await collection.insert_one(document)
-
-
