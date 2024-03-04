@@ -8,7 +8,6 @@ class SeleniumPage():
 
     def __init__(self):
         options = Options()
-        # options.add_argument('--headless=new')
         self.driver = webdriver.Chrome(
             options=options,
         )
