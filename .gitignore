@@ -1,4 +1,4 @@
 .idea
+.venv
 
-*/chromedriver/
-*/__pycache__/
+**/__pycache__/
