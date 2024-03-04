@@ -1,5 +1,5 @@
-.idea/
-.venv
 
-**/chromedriver/
+/.venv/
+
+products_data/chromedriver
 **/__pycache__/
