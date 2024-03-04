@@ -1,2 +1,4 @@
-/chromedriver/
-/__pycache__/
+.idea
+
+**/chromedriver/
+**/__pycache__/
