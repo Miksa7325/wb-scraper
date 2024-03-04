@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ffa311c-4007-4edb-adc7-683e5615f69d" name="Changes" comment="rename files">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products_data/selenium_connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/products_data/selenium_connect.py" afterDir="false" />
-    </list>
+    <list default="true" id="8ffa311c-4007-4edb-adc7-683e5615f69d" name="Changes" comment="rename files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +119,7 @@
       <workItem from="1709379477763" duration="3213000" />
       <workItem from="1709474592575" duration="2576000" />
       <workItem from="1709481017567" duration="2439000" />
-      <workItem from="1709545971704" duration="2176000" />
+      <workItem from="1709545971704" duration="2564000" />
     </task>
     <task id="LOCAL-00001" summary="rename files">
       <option name="closed" value="true" />
