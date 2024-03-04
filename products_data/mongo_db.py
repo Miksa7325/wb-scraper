@@ -23,6 +23,7 @@ class MongoDB(object):
 
     @staticmethod
     def create_client():
+        #поменять localhost на имя контейнера, в котором будет лежать монго
         uri = "mongodb://localhost:27017"
         client = AsyncIOMotorClient(uri, server_api=ServerApi('1'))
         return client
