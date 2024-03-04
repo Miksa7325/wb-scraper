@@ -30,12 +30,8 @@ def get_categories() -> Dict[str,str]:
                     urls_list.append(elem)
                     m += 1
 
-        while True:
-            category = input('Input the category or exit\n')
-            if category.isdigit() and int(category) < len(names_list):
-                result_dict[names_list[int(category)]] = urls_list[int(category)]
-            else:
-                break
+        category = 123
+        result_dict[names_list[category]] = urls_list[category]
 
         if len(result_dict) == 0:
             raise Exception('No categories found')
