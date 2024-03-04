@@ -24,9 +24,11 @@ class CategorySpider():
             product_href = a.xpath('./@href').get()
             product_img = a.xpath('div[1]/div[1]/div/div[1]/div[1]/picture/img/@src').get()
             product_rating = a.xpath('div[2]/div[4]/span[1]/span/text()').get()
-            product_reviews = a.xpath('div[2]/div[4]/span[2]/span/text()').get()
-            if product_reviews:
-                product_reviews = int(product_reviews.replace('\u2009', ''))
+            product_reviews = a.xpath('div[2]/div[4]/span[2]/span/text()').get().replace('\u2009', '')
+            if product_reviews.isdigit():
+                product_reviews = int(product_reviews)
+            else:
+                product_reviews = 0
 
             pattern = r"(\S+)(images\S+)"
             match = re.search(pattern, product_img)
