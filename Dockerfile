@@ -1,10 +1,10 @@
 FROM python:3.11
 
-WORKDIR /wb-scraper
+WORKDIR /test
 
-COPY requirements.txt /wb-scraper
+COPY requirements.txt /test
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /wb-scraper
+COPY . /test
 
 CMD ["python", "main.py"]
