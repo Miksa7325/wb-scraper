@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    mongo:
+        ports:
+            - '27017:27017'
+        container_name: dkrcomp-mongo
+        image: mongo
+
+    app:
+      container_name: app
+      depends_on:
+        - mongo
+      build:
+        context: ./app
+        dockerfile: Dockerfile

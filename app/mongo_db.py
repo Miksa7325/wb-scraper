@@ -3,7 +3,7 @@ from beanie import init_beanie
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.server_api import ServerApi
 
-from app.models import Product
+from models import Product
 
 
 class MongoDB(object):
@@ -24,6 +24,8 @@ class MongoDB(object):
     @staticmethod
     def create_client():
         #поменять localhost на имя контейнера, в котором будет лежать монго
-        uri = "mongodb://localhost:27017"
-        client = AsyncIOMotorClient(uri, server_api=ServerApi('1'))
+        #dkrcomp-mongo
+        #mongodb://localhost:27017
+        uri = "dkrcomp-mongo"
+        client = AsyncIOMotorClient(uri)
         return client
