@@ -1,10 +1,10 @@
 FROM python:3.11
 
-WORKDIR /test
+WORKDIR /app
 
-COPY requirements.txt /test
+COPY requirements.txt /app
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . /test
+COPY . /app
 
 CMD ["python", "main.py"]

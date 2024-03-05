@@ -1,9 +1,8 @@
 import io
 import json
-from typing import Dict
 
+def get_categories() -> dict[str,str]:
 
-def get_categories() -> Dict[str,str]:
     '''
     return:
     key: category name
@@ -14,26 +13,29 @@ def get_categories() -> Dict[str,str]:
         urls_list = []
         names_list = []
         result_dict = {}
-        m = 0
+        category_counter = 0
 
         for k, el in data.items():
             for key, elem in el.items():
                 if isinstance(elem, dict):
                     for keys, element in elem.items():
-                        print(f'{m}: {keys} {element}')
+                        print(f'{category_counter}: {keys} {element}')
                         names_list.append(keys)
                         urls_list.append(element)
-                        m += 1
+                        category_counter += 1
                 else:
-                    print(f'{m}: {key} {elem}')
+                    print(f'{category_counter}: {key} {elem}')
                     names_list.append(key)
                     urls_list.append(elem)
-                    m += 1
+                    category_counter += 1
 
         category = 123
         result_dict[names_list[category]] = urls_list[category]
 
-        if len(result_dict) == 0:
+        if not result_dict:
             raise Exception('No categories found')
 
         return result_dict
+
+if __name__ == '__main__':
+    get_categories()
