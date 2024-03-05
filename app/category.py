@@ -1,7 +1,6 @@
 import io
 import json
 
-
 def get_categories() -> dict[str,str]:
 
     '''
@@ -41,3 +40,6 @@ def get_categories() -> dict[str,str]:
             raise Exception('No categories found')
 
         return result_dict
+
+if __name__ == '__main__':
+    get_categories()

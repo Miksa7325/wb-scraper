@@ -3,7 +3,7 @@ from beanie import init_beanie
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.server_api import ServerApi
 
-from products_data.models import Product
+from app.models import Product
 
 
 class MongoDB(object):
