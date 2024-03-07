@@ -2,7 +2,6 @@ FROM python:3.11
 
 WORKDIR /app
 
-# Установка зависимостей для Chrome и ChromeDriver
 RUN apt-get update \
     && apt-get install -y wget gnupg ca-certificates \
     && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
@@ -18,7 +17,8 @@ RUN LATEST=$(wget -q -O - http://chromedriver.storage.googleapis.com/LATEST_RELE
     && unzip chromedriver_linux64.zip \
     && rm chromedriver_linux64.zip \
     && mv chromedriver /usr/local/bin/chromedriver \
-    && chmod +x /usr/local/bin/chromedriver
+    && chmod +x /usr/local/bin/chromedriver \
+    && rm -rf /usr/local/bin/chromedriver_linux64
 
 COPY requirements.txt /app
 RUN pip install --no-cache-dir -r requirements.txt
@@ -26,3 +26,14 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 
 CMD ["python", "main.py"]
+
+#FROM python:3.11
+#
+#WORKDIR /app
+#
+#COPY requirements.txt /app
+#RUN pip install --no-cache-dir -r requirements.txt
+#
+#COPY . /app
+#
+#CMD ["python", "main.py"]

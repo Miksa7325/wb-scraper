@@ -37,5 +37,6 @@ def get_categories() -> dict[str,str]:
 
         return result_dict
 
+
 if __name__ == '__main__':
     get_categories()

@@ -17,7 +17,7 @@ class CategorySpider():
 
             product_brand = a.xpath('div[2]/div[3]/div[2]/span[1]/text()').get()
             product_name = a.xpath('div[2]/div[3]/div[2]/span[2]/text()').get()
-            product_price = a.xpath('div[2]/div[1]/span/span[1]/text()').get()
+            product_price = a.xpath('div[2]/div[1]/span/span[2]/text()').get()
             if product_price:
                 product_price = float(product_price.replace(',', '.'))
             price_currency = a.xpath('div[2]/div[1]/span/span[2]/text()').get()
