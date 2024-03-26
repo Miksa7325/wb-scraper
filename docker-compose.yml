@@ -1,10 +1,12 @@
 version: '3.3'
 services:
     mongo:
-        ports:
-            - '27017:27017'
         container_name: dkrcomp-mongo
-        image: mongo
+        image: mongo:latest
+        volumes:
+          - app-db:/data/db
+        ports:
+          - "4449:27017"
 
     app:
       container_name: app
@@ -13,4 +15,6 @@ services:
       build:
         context: ./app
         dockerfile: Dockerfile
-        
+
+volumes:
+    app-db:

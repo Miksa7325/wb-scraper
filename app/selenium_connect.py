@@ -1,15 +1,21 @@
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 class SeleniumPage():
 
     def __init__(self):
         options = Options()
+        options.add_argument("--no-sandbox")
+        options.add_argument("--headless")
+        options.add_argument("--disable-dev-shm-usage")
         self.driver = webdriver.Chrome(
-            options=options,
+            service=Service(ChromeDriverManager().install()),
+            options=options
         )
 
     def __enter__(self):

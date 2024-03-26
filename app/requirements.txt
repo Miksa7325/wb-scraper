@@ -7,3 +7,4 @@ regex==2023.12.25
 requests==2.31.0
 Scrapy==2.11.1
 selenium==4.18.1
+webdriver-manager==4.0.1

@@ -28,6 +28,7 @@ class CategorySpider():
                 product_rating = float(product_rating)
             except Exception:
                 product_rating = 0
+
             product_reviews = a.xpath('div[2]/div[4]/span[2]/span/text()').get()
             try:
                 product_reviews = product_reviews.replace('\u2009', '')
@@ -56,4 +57,4 @@ class CategorySpider():
                 reviews=product_reviews,
             )
 
-            await item.save()
+            await item.create()

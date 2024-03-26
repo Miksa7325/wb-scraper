@@ -2,7 +2,6 @@ import io
 import json
 
 def get_categories() -> dict[str,str]:
-
     '''
     return:
     key: category name
