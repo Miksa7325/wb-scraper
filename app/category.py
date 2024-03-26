@@ -2,7 +2,7 @@ import io
 import json
 
 
-def check_enclosure(el, urls_list, names_list, category_counter):
+def check_enclosure(el, urls_list, names_list, category_counter) -> int:
     for key, elem in el.items():
         if not isinstance(elem, dict):
             print(f'{category_counter}: {key} {elem}')
@@ -36,8 +36,8 @@ def get_categories() -> dict[str,str]:
         for k, el in data.items():
             category_counter = check_enclosure(el, urls_list, names_list, category_counter)
 
-        category = 123
-        result_dict[names_list[category]] = urls_list[category]
+        for counter in range(category_counter):
+            result_dict[f'{counter}: {names_list[counter]}'] = urls_list[counter]
 
         if not result_dict:
             raise Exception('No categories found')
