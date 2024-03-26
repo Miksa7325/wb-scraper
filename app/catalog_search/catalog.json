@@ -124,7 +124,6 @@
             "Шлепанцы и аквасоки": "https://www.wildberries.by/catalog?category=8175"
         },
         "Мужская": "https://www.wildberries.by/catalog?category=751",
-        "Ортопедическая обувь": "https://www.wildberries.by/catalog?category=128335",
         "Аксессуары для обуви": "https://www.wildberries.by/catalog?category=62875"
     },
     "Детям": {
@@ -325,7 +324,6 @@
         },
         "Все для праздника": {
             "Атрибутика": "https://www.wildberries.by/catalog?category=10408",
-            "Букеты": "https://www.wildberries.by/catalog?category=130992",
             "Воздушные шарики и аксессуары": "https://www.wildberries.by/catalog?category=63092",
             "Карнавальные товары": "https://www.wildberries.by/catalog?category=63088",
             "Наборы для праздника": "https://www.wildberries.by/catalog?category=13327",
@@ -383,7 +381,7 @@
             "Жалюзи": "https://www.wildberries.by/catalog?category=130836",
             "Карнизы": "https://www.wildberries.by/catalog?category=130835",
             "Римские и рулонные шторы": "https://www.wildberries.by/catalog?category=130837",
-            "Тюли и гардины": "https://www.wildberries.by/catalog?category=130832",
+            "Тюли": "https://www.wildberries.by/catalog?category=130832",
             "Фотошторы": "https://www.wildberries.by/catalog?category=130833",
             "Шторы и портьеры": "https://www.wildberries.by/catalog?category=130834"
         }
@@ -410,7 +408,16 @@
         "Макияж": "https://www.wildberries.by/catalog?category=8924",
         "Мужская линия": "https://www.wildberries.by/catalog?category=8999",
         "Наборы для ухода": "https://www.wildberries.by/catalog?category=130482",
-        "Ногти": "https://www.wildberries.by/catalog?category=8951",
+        "Ногти": {
+            "Аксессуары": "https://www.wildberries.by/catalog?category=8957",
+            "Гель-лаки": "https://www.wildberries.by/catalog?category=63008",
+            "Дезинфекция и антисептика": "https://www.wildberries.by/catalog?category=61958",
+            "Для снятия лака": "https://www.wildberries.by/catalog?category=8955",
+            "Лаки": "https://www.wildberries.by/catalog?category=8953",
+            "Наборы": "https://www.wildberries.by/catalog?category=8958",
+            "Накладные ногти и декор": "https://www.wildberries.by/catalog?category=8956",
+            "Уход за ногтями": "https://www.wildberries.by/catalog?category=8954"
+        },
         "Органическая косметика": "https://www.wildberries.by/catalog?category=10012",
         "Парфюмерия": {
             "Детские ароматы": "https://www.wildberries.by/catalog?category=9232",
@@ -571,7 +578,6 @@
             "Матрасы": "https://www.wildberries.by/catalog?category=129073",
             "Наматрасники": "https://www.wildberries.by/catalog?category=129074",
             "Чехлы для матрасов": "https://www.wildberries.by/catalog?category=130634",
-            "Ламели для кровати": "https://www.wildberries.by/catalog?category=130247",
             "Подушки ортопедические": "https://www.wildberries.by/catalog?category=129067",
             "Банкетки и пуфы": "https://www.wildberries.by/catalog?category=130399",
             "Комоды": "https://www.wildberries.by/catalog?category=129070",
@@ -586,7 +592,9 @@
         },
         "Гардеробная мебель": "https://www.wildberries.by/catalog?category=130759",
         "Офисная мебель": "https://www.wildberries.by/catalog?category=129033",
+        "Садовая мебель": "https://www.wildberries.by/catalog?category=131051",
         "Торговая мебель": "https://www.wildberries.by/catalog?category=130694",
+        "Мебель для салонов красоты": "https://www.wildberries.by/catalog?category=131026",
         "Зеркала": "https://www.wildberries.by/catalog?category=130727",
         "Мебельная фурнитура": "https://www.wildberries.by/catalog?category=129168"
     },
@@ -874,21 +882,21 @@
     },
     "Сад и дача": {
         "Растения, семена и грунты": "https://www.wildberries.by/catalog?category=128760",
-        "Горшки, кашпо и подставки для растений": "https://www.wildberries.by/catalog?category=128740",
         "Удобрения и уход за растениями": "https://www.wildberries.by/catalog?category=128773",
-        "Товары для бани и сауны": "https://www.wildberries.by/catalog?category=8744",
-        "Грили, мангалы и барбекю": "https://www.wildberries.by/catalog?category=128745",
-        "Теплицы, парники, укрывной материал": "https://www.wildberries.by/catalog?category=128772",
+        "Горшки, кашпо и подставки для растений": "https://www.wildberries.by/catalog?category=128740",
         "Мойки высокого давления и аксессуары": "https://www.wildberries.by/catalog?category=128767",
         "Садовая техника": "https://www.wildberries.by/catalog?category=58530",
         "Садовый инструмент": "https://www.wildberries.by/catalog?category=128771",
-        "Полив и водоснабжение": "https://www.wildberries.by/catalog?category=128768",
-        "Товары для кемпинга, пикника и отдыха": "https://www.wildberries.by/catalog?category=128774",
-        "Садовый декор": "https://www.wildberries.by/catalog?category=128770",
-        "Садовая мебель": "https://www.wildberries.by/catalog?category=128769",
-        "Надувная мебель": "https://www.wildberries.by/catalog?category=128811",
-        "Дачные умывальники, души и туалеты": "https://www.wildberries.by/catalog?category=128766",
+        "Теплицы, парники, укрывной материал": "https://www.wildberries.by/catalog?category=128772",
+        "Грили, мангалы и барбекю": "https://www.wildberries.by/catalog?category=128745",
         "Бассейны": "https://www.wildberries.by/catalog?category=9038",
+        "Полив и водоснабжение": "https://www.wildberries.by/catalog?category=128768",
+        "Надувная мебель": "https://www.wildberries.by/catalog?category=128811",
+        "Садовый декор": "https://www.wildberries.by/catalog?category=128770",
+        "Дачные умывальники, души и туалеты": "https://www.wildberries.by/catalog?category=128766",
+        "Товары для кемпинга, пикника и отдыха": "https://www.wildberries.by/catalog?category=128774",
+        "Садовая мебель": "https://www.wildberries.by/catalog?category=128769",
+        "Товары для бани и сауны": "https://www.wildberries.by/catalog?category=8744",
         "Защита от насекомых и грызунов": "https://www.wildberries.by/catalog?category=130936"
     },
     "Здоровье": {
