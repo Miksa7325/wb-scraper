@@ -1,9 +1,8 @@
 from typing import Self
 from beanie import init_beanie
 from motor.motor_asyncio import AsyncIOMotorClient
-from pymongo.server_api import ServerApi
 
-from app.models import Product
+from models import Product
 
 
 class MongoDB(object):
@@ -15,6 +14,7 @@ class MongoDB(object):
     async def __aenter__(self) -> Self:
         if self._client is None:
             raise Exception("Databased connector is not initialized")
+
         await init_beanie(database=self._db, document_models=[Product])
         return self
 
@@ -23,7 +23,9 @@ class MongoDB(object):
 
     @staticmethod
     def create_client():
-        #поменять localhost на имя контейнера, в котором будет лежать монго
-        uri = "mongodb://localhost:27017"
-        client = AsyncIOMotorClient(uri, server_api=ServerApi('1'))
+        """
+        Creates client for docker-compose container
+        """
+        uri = "dkrcomp-mongo"
+        client = AsyncIOMotorClient(uri)
         return client

@@ -1,10 +1,10 @@
 import asyncio
 from aiohttp import ClientConnectorError
 
-from app.category import get_categories
-from app.mongo_db import MongoDB
-from app.selenium_connect import SeleniumPage
-from app.spider_category_pages import CategorySpider
+from category import get_categories
+from mongo_db import MongoDB
+from selenium_connect import SeleniumPage
+from spider_category_pages import CategorySpider
 
 def check_request(selenium_connect, url):
     while True:

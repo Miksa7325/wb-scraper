@@ -1,0 +1,20 @@
+version: '3.3'
+services:
+    mongo:
+        container_name: dkrcomp-mongo
+        image: mongo:latest
+        volumes:
+          - app-db:/data/db
+        ports:
+          - "4449:27017"
+
+    app:
+      container_name: app
+      depends_on:
+        - mongo
+      build:
+        context: ./app
+        dockerfile: Dockerfile
+
+volumes:
+    app-db:

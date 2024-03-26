@@ -2,7 +2,6 @@ import io
 import json
 
 def get_categories() -> dict[str,str]:
-
     '''
     return:
     key: category name
@@ -29,17 +28,14 @@ def get_categories() -> dict[str,str]:
                     urls_list.append(elem)
                     category_counter += 1
 
-        while True:
-            category = input('Input the category or exit\n')
-            if category.isdigit() and int(category) < len(names_list):
-                result_dict[names_list[int(category)]] = urls_list[int(category)]
-            else:
-                break
+        category = 123
+        result_dict[names_list[category]] = urls_list[category]
 
         if not result_dict:
             raise Exception('No categories found')
 
         return result_dict
+
 
 if __name__ == '__main__':
     get_categories()

@@ -15,4 +15,5 @@ async def get_product_description(href_pages: str) -> str:
                 product_descr = response_product_json.get('description').strip().replace('\n', '')
             else:
                 product_descr = ''
+
             return product_descr
