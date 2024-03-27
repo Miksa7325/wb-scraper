@@ -20,7 +20,7 @@ class CategorySpider():
             product_price = a.xpath('div[2]/div[1]/span/span[2]/text()').get()
             if product_price:
                 product_price = float(product_price.replace(',', '.'))
-            price_currency = a.xpath('div[2]/div[1]/span/span[2]/text()').get()
+            price_currency = a.xpath('div[2]/div[1]/span/span[3]/text()').get()
             product_href = a.xpath('./@href').get()
             product_img = a.xpath('div[1]/div[1]/div/div[1]/div[1]/picture/img/@src').get()
             product_rating = a.xpath('div[2]/div[4]/span[1]/span/text()').get()
